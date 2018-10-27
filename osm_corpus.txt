@@ -1,0 +1,14 @@
+farmland
+residential
+wood
+forest
+tree row
+tree
+footway
+sideway
+building
+hipped
+gabled
+half hipped
+flat
+
