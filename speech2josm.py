@@ -3,6 +3,7 @@
 import sys, os
 from pocketsphinx.pocketsphinx import *
 from sphinxbase.sphinxbase import *
+import wave
 import requests
 import yaml
 
@@ -12,6 +13,20 @@ def checkJOSM() :
     except requests.ConnectionError:
         print 'No JOSM connection - please check if JOSM is running and remote control is enabled.'
         exit()
+
+def playSound(filename):
+    wf = wave.open(filename, 'rb')
+    p = pyaudio.PyAudio()
+    stream = p.open(format =
+                    p.get_format_from_width(wf.getsampwidth()),
+                    channels = wf.getnchannels(),
+                    rate = wf.getframerate(),
+                    output = True)
+    data = wf.readframes(1024)
+    while data != '':
+        stream.write(data)
+        data = wf.readframes(1024)
+    stream.close()
 
 # Create a decoder with certain model
 config = Decoder.default_config()
@@ -44,6 +59,7 @@ while True:
     if decoder.hyp() != None:
         for seg in decoder.seg():
             if seg.word in mapping:
+                playSound('sms-alert-4-daniel_simon.wav')
                 print '\033[92m ' + seg.word +' \033[0m'
                 tags = '|'.join(mapping[seg.word])
                 r = requests.get('http://localhost:8111/zoom?left=8.19&right=8.20&top=48.605&bottom=48.590&select=currentselection&addtags=' + tags)
