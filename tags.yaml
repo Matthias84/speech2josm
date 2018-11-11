@@ -1,0 +1,41 @@
+#Keep alphabetic order, upper case required!
+
+BUILDING:
+ - "building=yes"
+DITCH:
+ - "waterway=ditch"
+FARMLAND:
+ - "landuse=farmland"
+FOOTWAY:
+ - "highway=footway"
+FLAT:
+ - "roof:shape=flat"
+FOREST:
+ - "natural=forest"
+HALF HIPPED:
+ - "roof:shape=half-hipped"
+HIPPED:
+ - "roof:shape=hipped"
+MEADOW:
+ - "landuse=meadow"
+PATH:
+ - "highway=path"
+LANDUSE RESIDENTIAL:
+ - "landuse=residential"
+SCRUB:
+ - "natural=scrub"
+SERVICE:
+ - "highway=service"
+SIDEWAY:
+ - "highway=footway"
+ - "footway=sidewalk"
+TRACK:
+ - "highway=track"
+TREE:
+ - "natural=tree"
+TREE ROW:
+ - "natural=tree_row"
+WATER:
+ - "natural=water"
+WOOD:
+ - "natural=wood"

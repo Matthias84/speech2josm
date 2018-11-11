@@ -1,14 +1,21 @@
-farmland
-residential
-wood
-forest
-tree row
-tree
-footway
-sideway
 building
-hipped
+ditch
+farmland
+flat
+forest
+footway
 gabled
 half hipped
-flat
+hipped
+meadow
+path
+residential
+scrub
+service
+sideway
+track
+tree
+tree row
+water
+wood
 

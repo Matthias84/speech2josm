@@ -1,4 +1,4 @@
-Language model created by QuickLM on Sat Oct 27 04:19:48 EDT 2018
+Language model created by QuickLM on Sun Nov 11 05:19:18 EST 2018
 Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
 
 The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
@@ -7,44 +7,59 @@ The code that was used to produce this language model is available in Open Sourc
 Please visit http://www.speech.cs.cmu.edu/tools/ for more information
 
 The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
-This model based on a corpus of 13 sentences and 15 words
+This model based on a corpus of 20 sentences and 22 words
 
 \data\
-ngram 1=15
-ngram 2=26
-ngram 3=15
+ngram 1=22
+ngram 2=40
+ngram 3=22
 
 \1-grams:
--0.7999 </s> -0.3010
--0.7999 <s> -0.2197
--1.9138 BUILDING -0.2261
--1.9138 FARMLAND -0.2261
--1.9138 FLAT -0.2261
--1.9138 FOOTWAY -0.2261
--1.9138 FOREST -0.2261
--1.9138 GABLED -0.2261
--1.9138 HALF -0.2903
--1.6128 HIPPED -0.2261
--1.9138 RESIDENTIAL -0.2261
--1.9138 ROW -0.2261
--1.9138 SIDEWAY -0.2261
--1.6128 TREE -0.2197
--1.9138 WOOD -0.2261
+-0.7924 </s> -0.3010
+-0.7924 <s> -0.2204
+-2.0934 BUILDING -0.2246
+-2.0934 DITCH -0.2246
+-2.0934 FARMLAND -0.2246
+-2.0934 FLAT -0.2246
+-2.0934 FOOTWAY -0.2246
+-2.0934 FOREST -0.2246
+-2.0934 GABLED -0.2246
+-2.0934 HALF -0.2940
+-1.7924 HIPPED -0.2246
+-2.0934 MEADOW -0.2246
+-2.0934 PATH -0.2246
+-2.0934 RESIDENTIAL -0.2246
+-2.0934 ROW -0.2246
+-2.0934 SCRUB -0.2246
+-2.0934 SERVICE -0.2246
+-2.0934 SIDEWAY -0.2246
+-2.0934 TRACK -0.2246
+-1.7924 TREE -0.2204
+-2.0934 WATER -0.2246
+-2.0934 WOOD -0.2246
 
 \2-grams:
--1.4150 <s> BUILDING 0.0000
--1.4150 <s> FARMLAND 0.0000
--1.4150 <s> FLAT 0.0000
--1.4150 <s> FOOTWAY 0.0000
--1.4150 <s> FOREST 0.0000
--1.4150 <s> GABLED 0.0000
--1.4150 <s> HALF 0.0000
--1.4150 <s> HIPPED 0.0000
--1.4150 <s> RESIDENTIAL 0.0000
--1.4150 <s> SIDEWAY 0.0000
--1.1139 <s> TREE 0.0000
--1.4150 <s> WOOD 0.0000
+-1.6021 <s> BUILDING 0.0000
+-1.6021 <s> DITCH 0.0000
+-1.6021 <s> FARMLAND 0.0000
+-1.6021 <s> FLAT 0.0000
+-1.6021 <s> FOOTWAY 0.0000
+-1.6021 <s> FOREST 0.0000
+-1.6021 <s> GABLED 0.0000
+-1.6021 <s> HALF 0.0000
+-1.6021 <s> HIPPED 0.0000
+-1.6021 <s> MEADOW 0.0000
+-1.6021 <s> PATH 0.0000
+-1.6021 <s> RESIDENTIAL 0.0000
+-1.6021 <s> SCRUB 0.0000
+-1.6021 <s> SERVICE 0.0000
+-1.6021 <s> SIDEWAY 0.0000
+-1.6021 <s> TRACK 0.0000
+-1.3010 <s> TREE 0.0000
+-1.6021 <s> WATER 0.0000
+-1.6021 <s> WOOD 0.0000
 -0.3010 BUILDING </s> -0.3010
+-0.3010 DITCH </s> -0.3010
 -0.3010 FARMLAND </s> -0.3010
 -0.3010 FLAT </s> -0.3010
 -0.3010 FOOTWAY </s> -0.3010
@@ -52,15 +67,22 @@ ngram 3=15
 -0.3010 GABLED </s> -0.3010
 -0.3010 HALF HIPPED 0.0000
 -0.3010 HIPPED </s> -0.3010
+-0.3010 MEADOW </s> -0.3010
+-0.3010 PATH </s> -0.3010
 -0.3010 RESIDENTIAL </s> -0.3010
 -0.3010 ROW </s> -0.3010
+-0.3010 SCRUB </s> -0.3010
+-0.3010 SERVICE </s> -0.3010
 -0.3010 SIDEWAY </s> -0.3010
+-0.3010 TRACK </s> -0.3010
 -0.6021 TREE </s> -0.3010
 -0.6021 TREE ROW 0.0000
+-0.3010 WATER </s> -0.3010
 -0.3010 WOOD </s> -0.3010
 
 \3-grams:
 -0.3010 <s> BUILDING </s>
+-0.3010 <s> DITCH </s>
 -0.3010 <s> FARMLAND </s>
 -0.3010 <s> FLAT </s>
 -0.3010 <s> FOOTWAY </s>
@@ -68,10 +90,16 @@ ngram 3=15
 -0.3010 <s> GABLED </s>
 -0.3010 <s> HALF HIPPED
 -0.3010 <s> HIPPED </s>
+-0.3010 <s> MEADOW </s>
+-0.3010 <s> PATH </s>
 -0.3010 <s> RESIDENTIAL </s>
+-0.3010 <s> SCRUB </s>
+-0.3010 <s> SERVICE </s>
 -0.3010 <s> SIDEWAY </s>
+-0.3010 <s> TRACK </s>
 -0.6021 <s> TREE </s>
 -0.6021 <s> TREE ROW
+-0.3010 <s> WATER </s>
 -0.3010 <s> WOOD </s>
 -0.3010 HALF HIPPED </s>
 -0.3010 TREE ROW </s>

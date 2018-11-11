@@ -35,7 +35,8 @@ while True:
         for seg in decoder.seg():
             if seg.word == 'BUILDING':
                 print '\033[92m BUILDING \033[0m'
-                r = requests.get('http://localhost:8111/load_and_zoom?addtags=building=yes&select=way23071688,way23076176,way23076177,&left=13.739727546842&right=13.740890970188&top=51.049987191025&bottom=51.048466954325')
+                #TODO zerlegen und mapping externalisieren
+                r = requests.get('http://localhost:8111/zoom?left=8.19&right=8.20&top=48.605&bottom=48.590&select=currentselection&addtags=foo=bar')
             else:
                 print (seg.word, seg.prob, seg.start_frame, seg.end_frame)
         decoder.end_utt()
