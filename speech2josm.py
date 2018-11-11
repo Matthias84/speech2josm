@@ -6,6 +6,12 @@ from sphinxbase.sphinxbase import *
 import requests
 import yaml
 
+def checkJOSM() :
+    try:
+        r = requests.get('http://localhost:8111/version')
+    except requests.ConnectionError:
+        print 'No JOSM connection - please check if JOSM is running and remote control is enabled.'
+        exit()
 
 # Create a decoder with certain model
 config = Decoder.default_config()
@@ -17,6 +23,7 @@ config.set_string('-logfn', '/dev/null')
 # load OSM tags mapping
 mapfile = open('tags.yaml','r')
 mapping = yaml.load(mapfile)
+checkJOSM()
 
 # read from microphone
 import pyaudio
@@ -35,7 +42,6 @@ while True:
     else:
          break
     if decoder.hyp() != None:
-        print ("Detection!")
         for seg in decoder.seg():
             if seg.word in mapping:
                 print '\033[92m ' + seg.word +' \033[0m'

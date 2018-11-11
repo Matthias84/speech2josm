@@ -4,12 +4,14 @@ Prototype of an external tool, that controls the Java OpenStreetMap editor by yo
 
 ## limitations
 
-Currently the number of recognized tags is pretty limited and esp. with noise we get false positives. Numeric values etc. aren't supported. Also the control of the editor is limited to very basic remote control commands.
+Currently the number of recognized tags is pretty limited and esp. with noise we get false positives.
+Numeric values etc. aren't supported. Also the control of the editor is limited to very basic remote control commands.
 
 # setup
 
-* sudo apt install pocketsphinx python-pocketsphinx pocketsphinx-en-us python-pyaudio python-requests (or use pip and python virtualenv)
-* python speech2josm.py
+Start JOSM (>3850) and enable remote control for all actions (edit - preferences - remote)
+* `sudo apt install pocketsphinx python-pocketsphinx pocketsphinx-en-us python-pyaudio python-requests (or use pip and python virtualenv)`
+* `python speech2josm.py`
 
 # troubleshooting
 
