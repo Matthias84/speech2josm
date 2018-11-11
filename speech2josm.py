@@ -39,7 +39,8 @@ while True:
         for seg in decoder.seg():
             if seg.word in mapping:
                 print '\033[92m ' + seg.word +' \033[0m'
-                #r = requests.get('http://localhost:8111/zoom?left=8.19&right=8.20&top=48.605&bottom=48.590&select=currentselection&addtags=foo=bar')
+                tags = '|'.join(mapping[seg.word])
+                r = requests.get('http://localhost:8111/zoom?left=8.19&right=8.20&top=48.605&bottom=48.590&select=currentselection&addtags=' + tags)
             else:
                 print '\033[95m ' + seg.word + str(seg.prob) + ',' + str(seg.start_frame) + ':' + str(seg.end_frame) + ' \033[0m'
         decoder.end_utt()
