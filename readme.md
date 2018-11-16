@@ -4,8 +4,9 @@ Prototype of an external tool, that controls the Java OpenStreetMap editor by yo
 
 ## limitations
 
-* number of recognized tags is pretty limited
 * false positives detected  esp. with noise
+* number of recognized tags is pretty limited
+* only english language
 * no numeric / ... custom values
 * JOSM control limited to tagging features only
 
