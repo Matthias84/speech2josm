@@ -4,20 +4,21 @@ Prototype of an external tool, that controls the Java OpenStreetMap editor by yo
 
 ## limitations
 
-Currently the number of recognized tags is pretty limited and esp. with noise we get false positives.
-Numeric values etc. aren't supported. Also the control of the editor is limited to very basic remote control commands.
+* number of recognized tags is pretty limited
+* false positives detected  esp. with noise
+* no numeric / ... custom values
+* JOSM control limited to tagging features only
 
 # setup
 
 Start JOSM (>3850) and enable remote control for all actions (edit - preferences - remote)
-* `sudo apt install pocketsphinx python-pocketsphinx pocketsphinx-en-us python-pyaudio python-requests (or use pip and python virtualenv)`
+* `sudo apt install pocketsphinx python-pocketsphinx pocketsphinx-en-us python-pyaudio python-requests` (or use `pip -R requirements.txt` and python virtualenv for the python dependencies)
 * `python speech2josm.py`
-
-# troubleshooting
+* wait and say 'footway' and confirm JOSM security dialog
 
 # tech
 
-* Python 3 script
+* Python 2 script
 * [Pocketsphinx](https://github.com/cmusphinx/pocketsphinx) native STT library with twigs based [pocketsphinx-python](https://github.com/cmusphinx/pocketsphinx-python) binding
 * [n-gram based dictionary](https://cmusphinx.github.io/wiki/tutoriallm/#building-a-simple-language-model-using-a-web-service) with EN-US voice modell
 * match speech control words against OSM tags
