@@ -20,7 +20,7 @@ Start JOSM (>3850) and enable remote control for all actions (edit - preferences
 # tech
 
 * Python 2 script
-* [Pocketsphinx](https://github.com/cmusphinx/pocketsphinx) native STT library with twigs based [pocketsphinx-python](https://github.com/cmusphinx/pocketsphinx-python) binding
+* [Pocketsphinx](https://github.com/cmusphinx/pocketsphinx) native offline STT library with twigs based [pocketsphinx-python](https://github.com/cmusphinx/pocketsphinx-python) binding
 * [n-gram based dictionary](https://cmusphinx.github.io/wiki/tutoriallm/#building-a-simple-language-model-using-a-web-service) with EN-US voice modell
 * match speech control words against OSM tags
 * control JOSM via HTTP API by [remote plugin](https://wiki.openstreetmap.org/wiki/JOSM/RemoteControl)
