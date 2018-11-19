@@ -2,6 +2,8 @@
 
 Prototype of an external tool, that controls the Java OpenStreetMap editor by your voice. So you don't need to pick the most common OSM tagging presets manually and can speedup your tagging without interrupting your geometry editing.
 
+[![speech2josm demo video](https://i.vimeocdn.com/video/740323047.jpg?mw=960&mh=540)](https://vimeo.com/301708829)
+
 ## limitations
 
 * false positives detected  esp. with noise
